@@ -1,7 +1,8 @@
-SymbAsm
-=======
+Symbly
+======
 
-A simple assembly-like language made for fun, focused on:
+Symbly (**Symb**ol Assem**bly**) simple assembly-like language made for fun,
+focused on:
 - Being easy to read for who's not familiar with assemblies;
 - Giving readable and helpful error reports;
 - Being RISC;
