@@ -148,6 +148,8 @@ memncpy:
 
         r2 <- r2 & r3            ; applies mask
 
+        ; TODO: Complete this section
+
         ; updates current address
         r1 <- r1 + 1
 
