@@ -5,3 +5,4 @@ authors = ["João Paulo Taylor Ienczak Zanette <jpaulotiz@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+structopt = { version = "0.2", default-features = false }
