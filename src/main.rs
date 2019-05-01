@@ -7,14 +7,14 @@ mod parser;
 #[derive(StructOpt, Debug)]
 #[structopt(name = "basic")]
 struct Opt {
-    /// Debug mode
+    /// Only parse source code, do not compile nor execute it.
     #[structopt(long = "parse-only")]
     parse_only: bool,
 }
 
 fn parse() {
     println!(">>> Parsing...");
-    let tree = parser::parse().expect("Error parsing file");
+    let tree = parser::parse().expect("Error parsing source code");
 
     println!("Resulting tree: {:?}", tree);
 
