@@ -1,0 +1,7 @@
+[package]
+name = "symbasm"
+version = "0.1.0"
+authors = ["João Paulo Taylor Ienczak Zanette <jpaulotiz@gmail.com>"]
+edition = "2018"
+
+[dependencies]
