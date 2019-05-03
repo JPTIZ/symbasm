@@ -1,3 +1,6 @@
+#[macro_use]
+extern crate pest_derive;
+
 extern crate structopt;
 
 use structopt::StructOpt;
@@ -14,7 +17,9 @@ struct Opt {
 
 fn parse() {
     println!(">>> Parsing...");
-    let tree = parser::parse().expect("Error parsing source code");
+    let tree = parser::parse(
+        "r1 <- r2 + 3"
+    ).expect("Error parsing source code");
 
     println!("Resulting tree: {:?}", tree);
 

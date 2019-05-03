@@ -1,0 +1,16 @@
+number = { ASCII_DIGIT+ }
+register = { "r" ~ number }
+
+add_instruction = {
+    register ~ " <- " ~ register ~ " + " ~ number
+}
+
+sub_instruction = {
+    register ~ "<-" ~ register ~ "+" ~ number
+}
+
+instruction = {
+    add_instruction
+}
+
+program = { instruction }
